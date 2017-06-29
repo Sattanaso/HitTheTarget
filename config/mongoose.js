@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
 
 module.exports = (envParams) => {
+	const uri = envParams.db;
 	mongoose.Promise = global.Promise;
-	mongoose.connect(envParams.db);
+	mongoose.connect(uri);
 
 	const db = mongoose.connection;
 

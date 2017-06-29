@@ -1,23 +1,24 @@
 {
-  "name": "hit-the-target",
+  "name": "share-it",
   "version": "1.0.0",
-  "description": "2d gun trajectory game",
+  "description": "Sharing space...",
   "main": "index.js",
   "scripts": {
+    "coverage": "cd coverage && index.html",
     "sass": "gulp sass:watch",
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc --reporter=html --reporter=text mocha && npm run coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sattanaso/HitTheTarget.git"
+    "url": "git+https://github.com/Sattanaso/ShareIt.git"
   },
-  "author": "",
+  "author": "Express 19 Team",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sattanaso/HitTheTarget/issues"
+    "url": "https://github.com/Sattanaso/ShareIt/issues"
   },
-  "homepage": "https://github.com/Sattanaso/HitTheTarget#readme",
+  "homepage": "https://github.com/Sattanaso/ShareIt#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
     "cookie-parser": "^1.4.3",
@@ -25,17 +26,24 @@
     "express": "^4.15.3",
     "express-session": "^1.15.3",
     "mongodb": "^2.2.29",
-    "mongoose": "^4.10.7",
+    "mongoose": "~4.10.7",
+    "nodemailer": "^4.0.1",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0",
     "pug": "^2.0.0-rc.2"
   },
   "devDependencies": {
+    "chai": "^4.0.2",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-concat-css": "^2.3.0",
     "gulp-sass": "^3.1.0",
     "gulp-uglifycss": "^1.0.8",
-    "openurl": "^1.1.1"
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.3",
+    "openurl": "^1.1.1",
+    "sinon": "^2.3.5"
   }
 }

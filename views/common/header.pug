@@ -11,8 +11,12 @@ header#header
     #bs-navbar-collapse.collapse.navbar-collapse.nav-right
       ul.nav.navbar-nav.navbar-nav-right
         li.nav-li
-          a#home-link.nav-li-a(href='/home') Home
+          a.nav-li-a(href='/home') Home
         li.nav-li
-          a#gallery-link.nav-li-a(href='/gallery') Gallery
+          a.nav-li-a(href='/sharing') Sharings
         li.nav-li
-          a#events-link.nav-li-a(href='/log-in') Sign in / Sign up
+          a.nav-li-a.dropdown.dropdown-toggle(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Settings
+            .dropdown-menu(aria-labelledby='dropdownMenuButton')
+              a.dropdown-item(href='/') Change password
+              a.dropdown-item(href='/') Contact us
+              a.dropdown-item(href='/') Sign in / Sign up

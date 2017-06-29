@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const passportLocalMongoose = require('passport-local-mongoose');
 
 const userSchema = new mongoose.Schema({
 	username: String,
@@ -48,6 +49,8 @@ userSchema.method('isAuthenticated', function (username, password) {
 
 mongoose.model('User', userSchema);
 UserModel = mongoose.model('User');
+
+// UserModel.plugin(passportLocalMongoose);
 
 module.exports = (function () {
 	return UserModel;

@@ -2,7 +2,7 @@ module.exports = {
 	home: (req, res, next) => {
 		res.render("home", {});
 	},
-	gallery: (req, res, next) => {
-		res.render("gallery", {});
+	sharing: (req, res, next) => {
+		res.render("sharing", {});
 	}
 }
