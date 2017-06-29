@@ -1,9 +1,9 @@
-const main = require("./main.controller");
+const view = require("./view.controller");
 const user = require("./user.controller");
 
 module.exports = (data) => {
     return {
-        main: main,
+        view: view,
         user: user(data.userData)
     }
 };
