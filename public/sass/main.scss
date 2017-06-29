@@ -1,18 +1,37 @@
 #header {
+	a {
+		font-size: 22px;
+		font-weight: bold;
+		color: #7F7F7F;
+	}
+
+	#brand {
+		margin-top: -10px;
+	}
+
+	.navbar {
+	background-color: #000000;
+	}
+
 	ul {
 		float: right;
+	}
+
+	.dropdown-menu {
+		background-color: #000000;
+		margin-left: -80px;
 	}
 }
 
 main {
 	padding: 50px;
 	background-color: whitesmoke;
-	color: black;
+	color: #000000;
 	min-height: 550px;
 }
 
 #footer {
-	background-color: black;
+	background-color: #000000;
 	color: whitesmoke;
 	text-align: center;
 	padding: 2%;

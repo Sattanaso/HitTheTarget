@@ -1,3 +1,4 @@
-#header ul{float:right}main{padding:50px;background-color:whitesmoke;color:black;min-height:550px}
-#footer{background-color:black;color:whitesmoke;text-align:center;padding:2%;min-height:100px}
-body{color:green}
+#header a{font-size:22px;font-weight:bold;color:#7f7f7f}#header #brand{margin-top:-10px}
+#header .navbar{background-color:#000}#header ul{float:right}#header .dropdown-menu{background-color:#000;margin-left:-80px}
+main{padding:50px;background-color:whitesmoke;color:#000;min-height:550px}#footer{background-color:#000;color:whitesmoke;text-align:center;padding:2%;min-height:100px}
+body{margin:0;padding:0}

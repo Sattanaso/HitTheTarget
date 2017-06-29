@@ -7,7 +7,7 @@ header#header
         span.icon-bar
         span.icon-bar
       a#logo-main.navbar-brand(href='/home')
-        img#brand(alt='Brand', src='', width='200px')
+        img#brand(alt='Brand', src='./assets/images/logo.png', width='150px')
     #bs-navbar-collapse.collapse.navbar-collapse.nav-right
       ul.nav.navbar-nav.navbar-nav-right
         li.nav-li
@@ -17,6 +17,9 @@ header#header
         li.nav-li
           a.nav-li-a.dropdown.dropdown-toggle(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Settings
             .dropdown-menu(aria-labelledby='dropdownMenuButton')
-              a.dropdown-item(href='/') Change password
-              a.dropdown-item(href='/') Contact us
-              a.dropdown-item(href='/') Sign in / Sign up
+              a.dropdown-item(href='/change-password') Change password 
+              br
+              a.dropdown-item(href='/contact-us') Contact us
+              br
+              a.dropdown-item(href='/sign-in') Sign in / Sign up
+              br
