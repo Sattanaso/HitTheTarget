@@ -1,0 +1,21 @@
+.header a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #7F7F7F; }
+
+.header #brand {
+  margin-top: -10px; }
+
+.header .navbar {
+  background-color: #000000; }
+  .header .navbar ul .nav-li-a:focus {
+    text-shadow: -1px 1px silver; }
+
+.header ul {
+  float: right; }
+
+.header .dropdown-menu {
+  border: 2px solid whitesmoke;
+  border-radius: 2%;
+  background-color: #000000;
+  margin-left: -80px; }

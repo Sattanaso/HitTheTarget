@@ -1,0 +1,29 @@
+header.header
+  nav.navbar.navbar-inverse.navbar-fixed-top
+    .navbar-header
+      button.btn.btn-navbar.navbar-toggle(id='', type='button', data-toggle='collapse', data-target='#bs-navbar-collapse')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a#logo-main.navbar-brand(href='/home')
+        img#brand(alt='Brand', src='./assets/images/logo.png', width='150px')
+    #bs-navbar-collapse.collapse.navbar-collapse.nav-right
+      ul.nav.navbar-nav.navbar-nav-right
+        li.nav-li
+          a.nav-li-a(href='/home') Home
+        li.nav-li
+          a.nav-li-a(href='/about') About
+        li.nav-li
+          a.nav-li-a(href='/news') News
+        li.nav-li
+          a.nav-li-a(href='/collection') Collection
+        li.nav-li
+          a.nav-li-a.dropdown.dropdown-toggle(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Settings
+            .dropdown-menu(aria-labelledby='dropdownMenuButton')
+              a.dropdown-item(href='/change-password') Change password 
+              br
+              a.dropdown-item(href='/contact-us') Contact us
+              br
+              a.dropdown-item(href='/sign-in') Sign in / Sign up
+              br

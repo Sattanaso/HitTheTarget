@@ -1,8 +1,0 @@
-{
-	"conectionString": "mongodb://admin:1qazxsw2@ds163060.mlab.com:63060/webdjsdatabase",
-	"transporterConnection": "smtps://webdjsandpy@gmail.com:webdjs2017andPy@smtp.gmail.com",
-	"htmlPartOne": "<div><h5>Click and confirm that you want to create an account on ShareIt.<br><br> This link will expire in fifteen minutes.</h5><a href=\"",
-	"htmlPartTwo": "/#/signup-after\">Create account on ShareIt</a></div>",
-	"appEmail": "\"ShareIt\" <webdjsandpy@gmail.com>",
-	"appSubject": "Finish creating your account on ShareIt"
-}
