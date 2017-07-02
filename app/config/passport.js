@@ -1,7 +1,7 @@
 module.exports = (app, db) => {
-	const passport = require('passport');
-	const LocalStrategy = require('passport-local').Strategy;
-	const userData = require('../data').userData;
+	const passport = require("passport");
+	const LocalStrategy = require("passport-local").Strategy;
+	const userData = require("../data").userData;
 
 	app.use(passport.initialize());
 	app.use(passport.session());
@@ -15,11 +15,11 @@ module.exports = (app, db) => {
 					}
 
 					if (!user) {
-						return done(null, false, { message: 'Incorrect username.' });
+						return done(null, false, { message: "Incorrect username." });
 					}
 
 					if (!user.validPassword(password)) {
-						return done(null, false, { message: 'Incorrect password.' });
+						return done(null, false, { message: "Incorrect password." });
 					}
 
 					return done(null, user);

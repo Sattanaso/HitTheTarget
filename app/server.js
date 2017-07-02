@@ -1,29 +1,29 @@
 module.exports = {
     init: (() => {
-        const env = process.env.NODE_ENV || 'development';
+        const env = process.env.NODE_ENV || "development";
 
-        const params = require('./config/')[env];
+        const params = require("./config/")[env];
         const dbConnect = params.db;
 
-        const mongo = require('./config/mongo')(dbConnect);
+        const mongo = require("./config/mongo")(dbConnect);
 
-        const express = require('express');
+        const express = require("express");
 
         const app = express();
 
-        require('./config/express')(express, app, params);
+        require("./config/express")(express, app, params);
 
-        require('./config/passport')(app, dbConnect);
+        require("./config/passport")(app, dbConnect);
 
-        const nodemailer = require('./config/nodemailer')(params);
+        const nodemailer = require("./config/nodemailer")(params);
 
-        const dbRequester = require('./utils/dbRequester')(mongo);
+        const dbRequester = require("./utils/dbRequester")(mongo);
 
-        const data = require('./data')(dbRequester);
+        const data = require("./data")(dbRequester);
 
-        const controllers = require('./controllers')(data);
+        const controllers = require("./controllers")(data);
 
-        require('./router')(express, app, dbConnect, nodemailer, controllers);
+        require("./router")(express, app, dbConnect, nodemailer, controllers);
 
         const port = params.port;
 
@@ -31,8 +31,8 @@ module.exports = {
 
         console.log(`Server running on port:${port}`);
 
-        if (env === 'development') {
-            require('openurl').open(`http://localhost:${port}`);
+        if (env === "development") {
+            require("openurl").open(`http://localhost:${port}`);
         }
     })()
 }

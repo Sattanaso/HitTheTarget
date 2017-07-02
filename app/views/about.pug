@@ -1,4 +1,41 @@
 extends common/layout
 
 block main-content
-	h3 About
+	#about-container
+		br
+		h3 What is that?
+		| 			That is JavaScript standard web application for news and information. It uses on a server side
+		a(href='https://nodejs.org/', target='_blank') NodeJS
+		| , 
+		a(href='https://expressjs.com/', target='_blank') Express
+		|  and 
+		a(href='https://www.mongodb.com/', target='_blank') MongoDB
+		| . On a client side -
+		a(href='http://jquery.com/', target='_blank') JQuery
+		|  for DOM manipulations. The design is supported by
+		a(href='http://getbootstrap.com/', target='_blank') Twitter Bootstrap
+		|  and 
+		a(href='http://sass-lang.com/', target='_blank') Sass
+		| .
+		p
+		hr
+		h3 What is that about?
+		p
+			| The App is written as Telerik Academy JavaScript Applications course project finishing before the end of May 9th, 2017. 
+			br
+			| 			Find source code:
+			a(href='https://github.com/Sattanaso/ShareIt', target='_blank')
+				img(src='./assets/images/github.png', alt='github image', width='25px', height='25px')
+				| 	Github
+		hr
+		h3 Who are the Express 19 Team?
+		p
+			| "Express 19" is a Telerik Academy NodeJS Course trio:
+			ul
+				li.team-members
+					a.btn-primary(target='_blank') bMedarski
+				li.team-members
+					a.btn-success(target='_blank') Asen_Manchev
+				li.team-members
+					a.btn-danger(target='_blank') Absend
+		p

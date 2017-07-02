@@ -9,14 +9,17 @@ module.exports = () => {
 		news: (req, res, next) => {
 			res.render("news", {});
 		},
-		collection: (req, res, next) => {
-			res.render("collection", {});
+		blog: (req, res, next) => {
+			res.render("blog", {});
 		},
 		contactUs: (req, res, next) => {
 			res.render("contact-us", {});
 		},
 		changePassword: (req, res, next) => {
 			res.render("change-password", {});
+		},
+		forgotPassword: (req, res, next) => {
+			res.render("forgot-password", {});
 		},
 		signIn: (req, res, next) => {
 			res.render("sign-in", {});

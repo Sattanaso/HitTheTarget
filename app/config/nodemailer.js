@@ -1,5 +1,5 @@
 module.exports = (params) => {
-	const nodemailer = require('nodemailer');
+	const nodemailer = require("nodemailer");
 
 	// create reusable transporter object using the default SMTP transport
 	const transporter = nodemailer.createTransport(params.transporterConnectionString);
@@ -10,7 +10,7 @@ module.exports = (params) => {
 			console.log(error);
 			return;
 		} else {
-			console.log('Server is ready to send e-mail messages!');
+			console.log("Server is ready to send e-mail messages!");
 		}
 	});
 
