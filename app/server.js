@@ -17,7 +17,9 @@ module.exports = {
 
         const nodemailer = require('./config/nodemailer')(params);
 
-        const data = require('./data')(mongo);
+        const dbRequester = require('./utils/dbRequester')(mongo);
+
+        const data = require('./data')(dbRequester);
 
         const controllers = require('./controllers')(data);
 

@@ -1,8 +1,7 @@
 module.exports = (express, app, db, nodemailer, controller) => {
-
     app.get("/home", controller.view().home);
 
-    app.get("/about", controller.view().about);
+    app.get("/about", controller.user.getUsers);
 
     app.get("/news", controller.view().news);
 

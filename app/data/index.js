@@ -1,5 +1,5 @@
-module.exports = (mongo) => {
-	const userData = require("./user.data")(mongo);
+module.exports = (dbRequester) => {
+	const userData = require("./user.data")(dbRequester);
 
 	return {
 		userData
