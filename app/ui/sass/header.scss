@@ -11,7 +11,7 @@ body {
     background-color: #F5F5F5;
 }
 
-header {
+header, footer {
     background-color: $header-bg-color;
     max-height: 45px;
     padding-top: 5px;
@@ -24,7 +24,7 @@ header {
     nav {
         padding: 0;
 
-        ul.menu-bar
+        ul.menu-bar, ul.menu-bar-foot
         {
             display: none; 
             float: right;
@@ -171,7 +171,134 @@ header {
                 transform: rotate(-45deg);
                 visibility: visible;
             }
-        } // menu-bar-btn
+        } // menu-bar-btn 
+
+        .menu-bar-btn-foot {
+            background-color: #6F6F6F;
+            width: 27px;
+            height: 27px;
+            border: 1px solid $header-bg-color;
+            border-radius: 10%;
+            padding: 2px;
+            padding-top: 4px;
+            position: inherit;
+            float: right;
+            margin-top: -40px;
+            margin-right: 13px;
+            cursor: pointer;
+
+            .lines-button-foot {
+                position: relative;
+                left: 16px;
+                top: -6px;
+                float: right;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                width: 60px;
+                height: 32px;
+                font-size: 0;
+                text-indent: -9999px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                box-shadow: none;
+                border-radius: none;
+                border: none;
+                cursor: pointer;
+                -webkit-transition: background 0.3s;
+                transition: background 0.3s;
+            }
+    
+            .lines-button-foot:focus {
+                outline: none;
+            }
+    
+            .lines-button-foot span {
+                display: block;
+                position: absolute;
+                left: 18px;
+                right: 18px;
+                height: 5px;
+                background: $header-bg-color;
+                border-radius: 0.57143rem;
+            }
+    
+            .lines-button-foot span::before,
+            .lines-button-foot span::after {
+                position: absolute;
+                display: block;
+                left: 0;
+                width: 100%;
+                height: 5px;
+                background-color: $header-bg-color;
+                border-radius: 0.57143rem;
+                content: "";
+            }
+    
+            .lines-button-foot span::before {
+                top: -10px;
+            }
+    
+            .lines-button-foot span::after {
+                bottom: -10px;
+            }
+    
+            .lines {
+                background: none;
+            }
+    
+            .lines span {
+                -webkit-transition: background 0s 0.3s;
+                transition: background 0s 0.3s;
+            }
+    
+            .lines span::before,
+            .lines span::after {
+                -webkit-transition-duration: 0.3s, 0.3s;
+                transition-duration: 0.3s, 0.3s;
+            }
+    
+            .lines span::before {
+                -webkit-transition-property: top, -webkit-transform;
+                transition-property: top, transform;
+            }
+    
+            .lines span::after {
+                -webkit-transition-property: bottom, -webkit-transform;
+                transition-property: bottom, transform;
+            }
+    
+            .lines.close {
+                background: none;
+            }
+    
+            .lines.close span {
+                visibility: hidden;
+            }
+    
+            .lines.close span::before {
+                top: 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+                visibility: visible;
+            }
+    
+            .lines.close span::after {
+                bottom: 0;
+                -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                visibility: visible;
+            }
+        } // menu-bar-btn 
+    } // nav
+
+    nav.foot {
+        ul {
+            margin-top: -135px;
+        }
     }
 }
 
@@ -189,7 +316,7 @@ header {
         padding-left: 15%;
         padding-right: 5%;
     }
-    header {
+    header, footer {
         #logo {
             display: inline-block;
             // border: 1px solid purple;
@@ -200,7 +327,7 @@ header {
             display: inline-block;
             width: 79% !important;
             // border:  1px solid blue;
-            ul.menu-bar
+            ul.menu-bar, ul.menu-bar-foot
             {
                 width: 25% !important;
                 display: inherit !important;
@@ -220,9 +347,15 @@ header {
                 }
             } //ul
     
-            .menu-bar-btn {
+            .menu-bar-btn,  .menu-bar-btn-foot{
                 display: none;
             } // menu-bar-btn
+        }
+
+        nav.foot {
+            ul {
+                margin-top: 0 !important;
+            }
         }
     }
 }

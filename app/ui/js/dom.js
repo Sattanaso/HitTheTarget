@@ -25,6 +25,18 @@ $(() => {
 		isToggle = !isToggle;
 	});
 
+	let isToggleFoot = false;
+	let $navbarfoot = $('ul.menu-bar-foot');
+	$('.menu-bar-btn-foot').on('click', () => {
+		if (!isToggleFoot) {
+			$navbarfoot.css('display', 'inherit');
+		} else {
+			$navbarfoot.css('display', 'none');
+		}
+
+		isToggleFoot = !isToggleFoot;
+	});
+
 	$('.menu-bar li a').on('click', () => {
 		$navbar.css('display', 'none');
 		$('#overlay').hide();
@@ -39,5 +51,14 @@ $(() => {
 	$(document).on('click', '.lines-button.close', function () {
 		$('#overlay').hide();
 		$('.lines-button').removeClass('close');
+	});
+
+	$(document).on('click', '.lines-button-foot', function () {
+		$('#overlay').show();
+		$('.lines-button-foot').addClass('close');
+	});
+	$(document).on('click', '.lines-button-foot.close', function () {
+		$('#overlay').hide();
+		$('.lines-button-foot').removeClass('close');
 	});
 });

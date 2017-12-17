@@ -6,36 +6,36 @@
 body {
   background-color: #F5F5F5; }
 
-header {
+header, footer {
   background-color: black;
   max-height: 45px;
   padding-top: 5px;
   padding-left: 5px; }
-  header #logo {
+  header #logo, footer #logo {
     width: 70%; }
-  header nav {
+  header nav, footer nav {
     padding: 0; }
-    header nav ul.menu-bar {
+    header nav ul.menu-bar, header nav ul.menu-bar-foot, footer nav ul.menu-bar, footer nav ul.menu-bar-foot {
       display: none;
       float: right;
       list-style-type: none;
       background: black;
       width: 50%;
       cursor: pointer; }
-      header nav ul.menu-bar li {
+      header nav ul.menu-bar li, header nav ul.menu-bar-foot li, footer nav ul.menu-bar li, footer nav ul.menu-bar-foot li {
         background-color: #c3c3c3;
         margin: 5px;
         padding: 2px 2px 2px 20%; }
-        header nav ul.menu-bar li a {
+        header nav ul.menu-bar li a, header nav ul.menu-bar-foot li a, footer nav ul.menu-bar li a, footer nav ul.menu-bar-foot li a {
           color: black;
           font-family: Arial, Helvetica, sans-serif;
           font-weight: bold;
           text-decoration: inherit;
           padding: 2px; }
-          header nav ul.menu-bar li a:hover {
+          header nav ul.menu-bar li a:hover, header nav ul.menu-bar-foot li a:hover, footer nav ul.menu-bar li a:hover, footer nav ul.menu-bar-foot li a:hover {
             text-decoration: underline;
             color: #F5F5F5; }
-    header nav .menu-bar-btn {
+    header nav .menu-bar-btn, footer nav .menu-bar-btn {
       background-color: #6F6F6F;
       width: 27px;
       height: 27px;
@@ -47,7 +47,7 @@ header {
       top: 8px;
       right: 13px;
       cursor: pointer; }
-      header nav .menu-bar-btn .lines-button {
+      header nav .menu-bar-btn .lines-button, footer nav .menu-bar-btn .lines-button {
         position: relative;
         left: 16px;
         top: -6px;
@@ -68,9 +68,9 @@ header {
         cursor: pointer;
         -webkit-transition: background 0.3s;
         transition: background 0.3s; }
-      header nav .menu-bar-btn .lines-button:focus {
+      header nav .menu-bar-btn .lines-button:focus, footer nav .menu-bar-btn .lines-button:focus {
         outline: none; }
-      header nav .menu-bar-btn .lines-button span {
+      header nav .menu-bar-btn .lines-button span, footer nav .menu-bar-btn .lines-button span {
         display: block;
         position: absolute;
         left: 18px;
@@ -79,7 +79,8 @@ header {
         background: black;
         border-radius: 0.57143rem; }
       header nav .menu-bar-btn .lines-button span::before,
-      header nav .menu-bar-btn .lines-button span::after {
+      header nav .menu-bar-btn .lines-button span::after, footer nav .menu-bar-btn .lines-button span::before,
+      footer nav .menu-bar-btn .lines-button span::after {
         position: absolute;
         display: block;
         left: 0;
@@ -88,41 +89,135 @@ header {
         background-color: black;
         border-radius: 0.57143rem;
         content: ""; }
-      header nav .menu-bar-btn .lines-button span::before {
+      header nav .menu-bar-btn .lines-button span::before, footer nav .menu-bar-btn .lines-button span::before {
         top: -10px; }
-      header nav .menu-bar-btn .lines-button span::after {
+      header nav .menu-bar-btn .lines-button span::after, footer nav .menu-bar-btn .lines-button span::after {
         bottom: -10px; }
-      header nav .menu-bar-btn .lines {
+      header nav .menu-bar-btn .lines, footer nav .menu-bar-btn .lines {
         background: none; }
-      header nav .menu-bar-btn .lines span {
+      header nav .menu-bar-btn .lines span, footer nav .menu-bar-btn .lines span {
         -webkit-transition: background 0s 0.3s;
         transition: background 0s 0.3s; }
       header nav .menu-bar-btn .lines span::before,
-      header nav .menu-bar-btn .lines span::after {
+      header nav .menu-bar-btn .lines span::after, footer nav .menu-bar-btn .lines span::before,
+      footer nav .menu-bar-btn .lines span::after {
         -webkit-transition-duration: 0.3s, 0.3s;
         transition-duration: 0.3s, 0.3s; }
-      header nav .menu-bar-btn .lines span::before {
+      header nav .menu-bar-btn .lines span::before, footer nav .menu-bar-btn .lines span::before {
         -webkit-transition-property: top, -webkit-transform;
         transition-property: top, transform; }
-      header nav .menu-bar-btn .lines span::after {
+      header nav .menu-bar-btn .lines span::after, footer nav .menu-bar-btn .lines span::after {
         -webkit-transition-property: bottom, -webkit-transform;
         transition-property: bottom, transform; }
-      header nav .menu-bar-btn .lines.close {
+      header nav .menu-bar-btn .lines.close, footer nav .menu-bar-btn .lines.close {
         background: none; }
-      header nav .menu-bar-btn .lines.close span {
+      header nav .menu-bar-btn .lines.close span, footer nav .menu-bar-btn .lines.close span {
         visibility: hidden; }
-      header nav .menu-bar-btn .lines.close span::before {
+      header nav .menu-bar-btn .lines.close span::before, footer nav .menu-bar-btn .lines.close span::before {
         top: 0;
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
         visibility: visible; }
-      header nav .menu-bar-btn .lines.close span::after {
+      header nav .menu-bar-btn .lines.close span::after, footer nav .menu-bar-btn .lines.close span::after {
         bottom: 0;
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
         visibility: visible; }
+    header nav .menu-bar-btn-foot, footer nav .menu-bar-btn-foot {
+      background-color: #6F6F6F;
+      width: 27px;
+      height: 27px;
+      border: 1px solid black;
+      border-radius: 10%;
+      padding: 2px;
+      padding-top: 4px;
+      position: inherit;
+      float: right;
+      margin-top: -40px;
+      margin-right: 13px;
+      cursor: pointer; }
+      header nav .menu-bar-btn-foot .lines-button-foot, footer nav .menu-bar-btn-foot .lines-button-foot {
+        position: relative;
+        left: 16px;
+        top: -6px;
+        float: right;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 60px;
+        height: 32px;
+        font-size: 0;
+        text-indent: -9999px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        box-shadow: none;
+        border-radius: none;
+        border: none;
+        cursor: pointer;
+        -webkit-transition: background 0.3s;
+        transition: background 0.3s; }
+      header nav .menu-bar-btn-foot .lines-button-foot:focus, footer nav .menu-bar-btn-foot .lines-button-foot:focus {
+        outline: none; }
+      header nav .menu-bar-btn-foot .lines-button-foot span, footer nav .menu-bar-btn-foot .lines-button-foot span {
+        display: block;
+        position: absolute;
+        left: 18px;
+        right: 18px;
+        height: 5px;
+        background: black;
+        border-radius: 0.57143rem; }
+      header nav .menu-bar-btn-foot .lines-button-foot span::before,
+      header nav .menu-bar-btn-foot .lines-button-foot span::after, footer nav .menu-bar-btn-foot .lines-button-foot span::before,
+      footer nav .menu-bar-btn-foot .lines-button-foot span::after {
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: black;
+        border-radius: 0.57143rem;
+        content: ""; }
+      header nav .menu-bar-btn-foot .lines-button-foot span::before, footer nav .menu-bar-btn-foot .lines-button-foot span::before {
+        top: -10px; }
+      header nav .menu-bar-btn-foot .lines-button-foot span::after, footer nav .menu-bar-btn-foot .lines-button-foot span::after {
+        bottom: -10px; }
+      header nav .menu-bar-btn-foot .lines, footer nav .menu-bar-btn-foot .lines {
+        background: none; }
+      header nav .menu-bar-btn-foot .lines span, footer nav .menu-bar-btn-foot .lines span {
+        -webkit-transition: background 0s 0.3s;
+        transition: background 0s 0.3s; }
+      header nav .menu-bar-btn-foot .lines span::before,
+      header nav .menu-bar-btn-foot .lines span::after, footer nav .menu-bar-btn-foot .lines span::before,
+      footer nav .menu-bar-btn-foot .lines span::after {
+        -webkit-transition-duration: 0.3s, 0.3s;
+        transition-duration: 0.3s, 0.3s; }
+      header nav .menu-bar-btn-foot .lines span::before, footer nav .menu-bar-btn-foot .lines span::before {
+        -webkit-transition-property: top, -webkit-transform;
+        transition-property: top, transform; }
+      header nav .menu-bar-btn-foot .lines span::after, footer nav .menu-bar-btn-foot .lines span::after {
+        -webkit-transition-property: bottom, -webkit-transform;
+        transition-property: bottom, transform; }
+      header nav .menu-bar-btn-foot .lines.close, footer nav .menu-bar-btn-foot .lines.close {
+        background: none; }
+      header nav .menu-bar-btn-foot .lines.close span, footer nav .menu-bar-btn-foot .lines.close span {
+        visibility: hidden; }
+      header nav .menu-bar-btn-foot .lines.close span::before, footer nav .menu-bar-btn-foot .lines.close span::before {
+        top: 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        visibility: visible; }
+      header nav .menu-bar-btn-foot .lines.close span::after, footer nav .menu-bar-btn-foot .lines.close span::after {
+        bottom: 0;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        visibility: visible; }
+  header nav.foot ul, footer nav.foot ul {
+    margin-top: -135px; }
 
 @media only screen and (min-width: 1220px) {
   body {
@@ -131,23 +226,25 @@ header {
     background-size: 100%;
     padding-left: 15%;
     padding-right: 5%; }
-  header #logo {
+  header #logo, footer #logo {
     display: inline-block;
     width: 20% !important; }
-  header nav {
+  header nav, footer nav {
     display: inline-block;
     width: 79% !important; }
-    header nav ul.menu-bar {
+    header nav ul.menu-bar, header nav ul.menu-bar-foot, footer nav ul.menu-bar, footer nav ul.menu-bar-foot {
       width: 25% !important;
       display: inherit !important; }
-      header nav ul.menu-bar li {
+      header nav ul.menu-bar li, header nav ul.menu-bar-foot li, footer nav ul.menu-bar li, footer nav ul.menu-bar-foot li {
         background-color: black !important;
         display: inline-block;
         padding: 2px 2px 0 2px !important;
         margin: 0 !important; }
-        header nav ul.menu-bar li a {
+        header nav ul.menu-bar li a, header nav ul.menu-bar-foot li a, footer nav ul.menu-bar li a, footer nav ul.menu-bar-foot li a {
           color: #C0C0C0 !important; }
-      header nav ul.menu-bar li.ab {
+      header nav ul.menu-bar li.ab, header nav ul.menu-bar-foot li.ab, footer nav ul.menu-bar li.ab, footer nav ul.menu-bar-foot li.ab {
         border-right: 1px solid #C0C0C0 !important; }
-    header nav .menu-bar-btn {
-      display: none; } }
+    header nav .menu-bar-btn, header nav .menu-bar-btn-foot, footer nav .menu-bar-btn, footer nav .menu-bar-btn-foot {
+      display: none; }
+  header nav.foot ul, footer nav.foot ul {
+    margin-top: 0 !important; } }
