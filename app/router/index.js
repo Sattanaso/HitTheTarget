@@ -3,7 +3,7 @@ module.exports = (express, app, db, nodemailer, controller) => {
 
     app.get("/about", controller.view().about);
 
-    app.get("/news", controller.view().news);
+    app.get("/cvs", controller.view().cvs);
 
     app.get("/blog", controller.view().blog);
     app.post("/blog", (req, res) => {

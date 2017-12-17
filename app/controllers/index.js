@@ -1,5 +1,5 @@
-const view = require("./view.controller");
-const user = require("./user.controller");
+const view = require("./view");
+const user = require("./user");
 
 module.exports = (data) => {
     return {

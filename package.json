@@ -6,7 +6,7 @@
   "scripts": {
     "coverage": "cd coverage && index.html",
     "sass": "gulp sass:watch",
-    "start": "node app.js",
+    "start": "node startup.js",
     "test": "nyc --reporter=html --reporter=text mocha && npm run coverage"
   },
   "repository": {

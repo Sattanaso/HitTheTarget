@@ -1,7 +1,7 @@
 module.exports = (connectionString) => {
 	const mongojs = require("mongojs");
 
-	const collections = ["users", "news", "blogs", "tags"];
+	const collections = ["users", "cvs", "blogs", "tags"];
 
 	const db = mongojs(connectionString, collections);
 

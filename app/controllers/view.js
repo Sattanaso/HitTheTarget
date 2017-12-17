@@ -6,8 +6,8 @@ module.exports = () => {
 		about: (req, res, next) => {
 			res.render("about", {});
 		},
-		news: (req, res, next) => {
-			res.render("news", {});
+		cvs: (req, res, next) => {
+			res.render("cvs", {});
 		},
 		blog: (req, res, next) => {
 			res.render("blog", {});

@@ -1,6 +1,12 @@
 doctype html
 html(lang="en")
-  include head
+  head
+    title ShareIt
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='icon', href='./assets/images/icon-ninja.png')
+    link(rel='stylesheet', href='./libs/bootstrap/dist/css/bootstrap.min.css', type='text/css')
+    link(rel='stylesheet', href='./bundle.css', type='text/css')
 
   body
     #wrapper
@@ -8,7 +14,7 @@ html(lang="en")
 
       main.main
         block main-content
-        
+
       include footer
 
       include scripts
