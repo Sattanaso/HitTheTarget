@@ -1,1 +1,0 @@
-console.log("ShareIt - NodeJS Telerik Academy course");

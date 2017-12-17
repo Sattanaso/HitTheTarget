@@ -1,27 +1,24 @@
-header.header
-  nav.navbar.navbar-inverse.navbar-fixed-top
-    .navbar-header
-      button.btn.btn-navbar.navbar-toggle(id='', type='button', data-toggle='collapse', data-target='#bs-navbar-collapse')
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a#logo-main.navbar-brand(href='/home')
-        img#brand(alt='Brand', src='./assets/images/logo.png', width='150px')
-    #bs-navbar-collapse.collapse.navbar-collapse.nav-right
-      ul.nav.navbar-nav.navbar-nav-right
-        li.nav-li
-          a.nav-li-a(href='/about') About
-        li.nav-li
-          a.nav-li-a(href='/blog') Blog
-        li.nav-li
-          a.nav-li-a(href='/cvs') CVs
-        li.nav-li
-          a.nav-li-a.dropdown.dropdown-toggle(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Settings
-            .dropdown-menu(aria-labelledby='dropdownMenuButton')
-              a.dropdown-item(href='/change-password') Change password 
-              br
-              a.dropdown-item(href='/contact-us') Contact us
-              br
-              a.dropdown-item(href='/sign-in') Sign in / Sign up
-              br
+header
+  #logo
+    a(href='/home')
+      img(src='./assets/images/icon.png', alt='Logo', width='40px', height='40px')
+      img(src='./assets/images/logo.png', alt='Logo', width='140px', height='40px')
+    |         
+  nav
+    ul.menu-bar
+      li.ab
+        a.menu-bar-item(href='/about') ABOUT
+      |                 
+      li.ab
+        a.menu-bar-item(href='/blog') BLOG
+      |                 
+      li
+        a.menu-bar-item(href='/cvs') CV
+      |                
+      li
+        img#language(src='./assets/images/bg.jpg', alt='language-flag', width='25px')
+    |             
+    .menu-bar-btn
+      button.lines-button.lines
+        span
+    |             
