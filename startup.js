@@ -1,1 +1,1 @@
-require("./app/server").init;
+require("./app/server").init
