@@ -1,16 +1,16 @@
 # ShareIt
 ## Atanas Raykov 's Blog, CV creator and CV validator.
 
-[NodeJS](https://nodejs.org/ "NodeJS") application,
+[NodeJS](https://nodejs.org/ "NodeJS") [Express](https://expressjs.com/ "Express") application with [MongoDB](https://www.mongodb.com/ "MongoDB").
 
 - to install node modules: >> **npm install**
 
 - to run app: >> **npm start**
 
-Front-end uses [Pug](https://pugjs.org/ "Pug") and [Sass](http://sass-lang.com/ "Sass").
+For UI [Pug](https://pugjs.org/ "Pug") and [Sass](http://sass-lang.com/ "Sass") are used.
 
 - to run sass watcher: >> **npm run sass**
 
-App is tested with [Mocha](https://mochajs.org/ "Mocha"), [Chai](http://chaijs.com/ "Chai"), [SinonJS](http://sinonjs.org/ "SinonJS") and [Istanbul](https://www.npmjs.com/package/istanbul/ "Istanbul").
+For Testing, [Mocha](https://mochajs.org/ "Mocha"), [Chai](http://chaijs.com/ "Chai"), [SinonJS](http://sinonjs.org/ "SinonJS") and [Istanbul](https://www.npmjs.com/package/istanbul/ "Istanbul") are used.
 
 - to run tests: >> **npm test**

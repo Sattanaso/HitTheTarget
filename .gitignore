@@ -11,3 +11,5 @@ public/css/
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/angulardoc.json
+
+app/config/constants.json

@@ -3,14 +3,11 @@
   padding: 0;
   border: 0; }
 
-body {
-  background-color: #F5F5F5; }
-
 header, footer {
   background-color: black;
   max-height: 45px;
   padding-top: 5px;
-  padding-left: 5px; }
+  padding-left: 25px; }
   header #logo, footer #logo {
     width: 70%; }
   header nav, footer nav {
@@ -35,6 +32,8 @@ header, footer {
           header nav ul.menu-bar li a:hover, header nav ul.menu-bar-foot li a:hover, footer nav ul.menu-bar li a:hover, footer nav ul.menu-bar-foot li a:hover {
             text-decoration: underline;
             color: #F5F5F5; }
+        header nav ul.menu-bar li img, header nav ul.menu-bar-foot li img, footer nav ul.menu-bar li img, footer nav ul.menu-bar-foot li img {
+          margin-top: 5px; }
     header nav .menu-bar-btn, footer nav .menu-bar-btn {
       background-color: #6F6F6F;
       width: 27px;
@@ -233,7 +232,7 @@ header, footer {
     display: inline-block;
     width: 79% !important; }
     header nav ul.menu-bar, header nav ul.menu-bar-foot, footer nav ul.menu-bar, footer nav ul.menu-bar-foot {
-      width: 25% !important;
+      width: 26% !important;
       display: inherit !important; }
       header nav ul.menu-bar li, header nav ul.menu-bar-foot li, footer nav ul.menu-bar li, footer nav ul.menu-bar-foot li {
         background-color: black !important;
